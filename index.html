@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for Search Engine Optimization (SEO) and sharing -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ICDS Monthly Report App – Free app for Anganwadi workers to track daily attendance, stock, and generate monthly reports automatically." />
+  <meta name="keywords" content="ICDS app, Anganwadi worker app, monthly report app, stock tracking, attendance tracking" />
+  <meta name="author" content="Jyotee Prokash Haldar" />
+  <meta property="og:title" content="ICDS Monthly Report – Anganwadi Worker App" />
+  <meta property="og:description" content="Free Android app for Anganwadi workers. Track attendance, manage stock, generate reports instantly." />
+  <meta property="og:type" content="website" />
+  
+  <title>ICDS Monthly Report – Anganwadi Worker App</title>
+
+  <!-- Loading Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- LINKING OUR NEW EXTERNAL CSS FILE -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ==============================
+       NAVIGATION BAR
+  ============================== -->
+  <nav class="nav" id="mainNav">
+    <a href="#" class="nav-logo">
+      <img src="images/logo.png" alt="ICDS Logo" style="width: 36px; height: 36px; border-radius: 10px;">
+      ICDS Report
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#features">Features</a>
+      <a href="#how">How it Works</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#plans">Plans</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="#download" class="nav-cta">Download App</a>
+    </div>
+    <!-- Mobile Hamburger Menu Button -->
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ==============================
+       HERO SECTION (Top Banner)
+  ============================== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <div class="hero-badge-dot"></div>
+            Free for Anganwadi Workers
+          </div>
+          <h1>
+            Smart Reports
+            <span>for Anganwadi</span>
+            Workers
+          </h1>
+          <p class="hero-desc">
+            Track daily attendance, manage stock automatically, and generate complete monthly reports in seconds — built specifically for ICDS workers across India.
+          </p>
+          <div class="hero-btns">
+            <a href="#download" class="btn-primary">⬇ Download Free App</a>
+            <a href="#how" class="btn-secondary">How it Works</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="hero-stat-num">100%</div>
+              <div class="hero-stat-label">Free to Start</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">6</div>
+              <div class="hero-stat-label">Free Reports</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">Auto</div>
+              <div class="hero-stat-label">Stock Tracking</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Phone Mockup Visualization using real image -->
+        <div class="hero-phone-wrap">
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <div class="phone-notch"></div>
+              <img src="images/home.png" alt="App Screen" style="width: 100%; height: 100%; object-fit: cover; border-radius: 34px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       FEATURES SECTION
+  ============================== -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="features-header reveal">
+        <div class="tag">✨ Features</div>
+        <h2>Everything an Anganwadi<br/>worker needs</h2>
+        <p>All your monthly paperwork, done automatically. No typing errors, no calculation mistakes.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon">📝</div>
+          <h3>Smart Daily Entry</h3>
+          <p>Dates, days, and menus are pre-filled automatically. You only enter attendance counts and any new stock received.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon">📦</div>
+          <h3>Automatic Stock Tracking</h3>
+          <p>Opening stock auto-fills from last month's closing. Stock balance updates daily as you enter attendance — no manual calculation.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon">📊</div>
+          <h3>One-Click Monthly Report</h3>
+          <p>Tap Generate Report and get a complete report with attendance totals, consumption, stock balance, and spending breakdown.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon">🍱</div>
+          <h3>Menu Chart Editor</h3>
+          <p>View and edit the Menu A / Menu B nutrition rates (Rice, Pulses, Oil, Vegetable, Potato, Egg) per person type.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon">🔒</div>
+          <h3>No Future Month Entry</h3>
+          <p>The app blocks future months from being selected, preventing accidental entry and keeping your records accurate.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon">☁️</div>
+          <h3>Cloud Saved — Always Safe</h3>
+          <p>All data is saved to the cloud via Firebase. Change phone, log back in — all your history is right there.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       HOW IT WORKS SECTION
+  ============================== -->
+  <section class="section how-bg" id="how">
+    <div class="container">
+      <div class="how-inner">
+        <div class="how-text reveal">
+          <h2>From daily entry<br/>to complete report</h2>
+          <div class="how-step">
+            <div class="how-step-num">1</div>
+            <div class="how-step-content">
+              <h4>Select Month &amp; Enter Opening Stock</h4>
+              <p>Pick the month. If you generated last month's report, opening stock fills in automatically from closing stock.</p>
+            </div>
+          </div>
+          <div class="how-step">
+            <div class="how-step-num">2</div>
+            <div class="how-step-content">
+              <h4>Enter Daily Attendance</h4>
+              <p>Each day, enter Mother count and Children count. Menu is pre-assigned (A or B alternating), Sundays marked Off automatically.</p>
+            </div>
+          </div>
+          <div class="how-step">
+            <div class="how-step-num">3</div>
+            <div class="how-step-content">
+              <h4>Log Stock Received (When Needed)</h4>
+              <p>On any day new stock arrives, enter Rice/Pulses/Oil received. The running balance updates immediately.</p>
+            </div>
+          </div>
+          <div class="how-step">
+            <div class="how-step-num">4</div>
+            <div class="how-step-content">
+              <h4>Generate Monthly Report</h4>
+              <p>At month end, tap Generate Report. The app calculates everything and saves the closing stock for next month.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="how-visual reveal reveal-delay-2">
+          <div class="report-preview">
+            <div class="report-title">📊 June 2025 — Monthly Report</div>
+            <table class="report-table">
+              <tr><th>Item</th><th>Opening</th><th>Consumed</th><th>Closing</th></tr>
+              <tr><td>Rice KG</td><td>45.20</td><td class="amber">12.36</td><td class="green">32.84</td></tr>
+              <tr><td>Pulses KG</td><td>12.50</td><td class="amber">3.24</td><td class="green">9.26</td></tr>
+              <tr><td>Oil L</td><td>5.00</td><td class="amber">1.44</td><td class="green">3.56</td></tr>
+            </table>
+            <div class="report-summary">
+              <div class="rs-card"><div class="rs-label">Total Mothers</div><div class="rs-val">248</div><div class="rs-unit">attendance days</div></div>
+              <div class="rs-card"><div class="rs-label">Total Children</div><div class="rs-val">512</div><div class="rs-unit">attendance days</div></div>
+              <div class="rs-card"><div class="rs-label">Egg Spend</div><div class="rs-val">₹4,160</div><div class="rs-unit">this month</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       SCREENSHOTS SECTION
+  ============================== -->
+  <section class="section" id="screenshots">
+    <div class="container">
+      <div class="screenshots-header reveal">
+        <div class="tag">📱 App Preview</div>
+        <h2>See Every Screen</h2>
+        <p>A clean, simple interface designed for Anganwadi workers — works perfectly on any Android phone.</p>
+      </div>
+      <div class="screens-tabs">
+        <button class="screen-tab active" onclick="showScreen('home')">Home</button>
+        <button class="screen-tab" onclick="showScreen('entry')">Daily Entry</button>
+        <button class="screen-tab" onclick="showScreen('stock')">Stock</button>
+        <button class="screen-tab" onclick="showScreen('report')">Report</button>
+        <button class="screen-tab" onclick="showScreen('settings')">Settings</button>
+      </div>
+      <!-- JavaScript will inject screen content here -->
+      <div class="screens-display" id="screensDisplay"></div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       VIDEO / DEMO SECTION
+  ============================== -->
+  <section class="section-sm video-section" id="video">
+    <div class="container">
+      <div class="video-inner reveal">
+        <div class="tag">🎬 Demo</div>
+        <h2>Watch the App in Action</h2>
+        <p>See how easy it is to enter data and generate a complete monthly report.</p>
+        <div class="video-frame">
+          <div class="video-frame-bg"></div>
+          <div class="video-placeholder">
+            <div class="video-play-btn">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <div class="video-ph-text">App Demo Video</div>
+            <div class="video-ph-sub">Upload your demo video to replace this placeholder</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       PRICING PLANS
+  ============================== -->
+  <section class="section" id="plans">
+    <div class="container">
+      <div class="plans-header reveal">
+        <div class="tag">💳 Pricing</div>
+        <h2>Simple, Honest Pricing</h2>
+        <p>Start free with 6 reports. Upgrade only when you need more.</p>
+      </div>
+      <div class="plans-grid">
+        <div class="plan-card reveal reveal-delay-1">
+          <div class="plan-name">Free Trial</div>
+          <div class="plan-price">₹0 <span></span></div>
+          <div class="plan-reports">6 reports included</div>
+          <ul class="plan-features">
+            <li>6 monthly reports</li><li>Valid for 3 months</li><li>All features included</li><li>Cloud backup</li>
+          </ul>
+          <button class="plan-btn" onclick="document.getElementById('download').scrollIntoView({behavior:'smooth'})">Download Free</button>
+        </div>
+        <div class="plan-card reveal reveal-delay-2">
+          <div class="plan-name">Basic</div>
+          <div class="plan-price">₹30 <span>one time</span></div>
+          <div class="plan-reports">1 report / 30 days</div>
+          <ul class="plan-features">
+            <li>1 monthly report</li><li>Valid 30 days</li><li>All features</li><li>WhatsApp support</li>
+          </ul>
+          <button class="plan-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Basic</button>
+        </div>
+        <div class="plan-card featured reveal reveal-delay-3">
+          <div class="plan-popular">Most Popular</div>
+          <div class="plan-name">Monthly Pro</div>
+          <div class="plan-price">₹100 <span>one time</span></div>
+          <div class="plan-reports">5 reports / 6 months</div>
+          <ul class="plan-features">
+            <li>5 monthly reports</li><li>Valid 6 months</li><li>All features</li><li>Priority support</li>
+          </ul>
+          <button class="plan-btn">Get Pro Plan</button>
+        </div>
+        <div class="plan-card reveal reveal-delay-4">
+          <div class="plan-name">Annual</div>
+          <div class="plan-price">₹1000 <span>per year</span></div>
+          <div class="plan-reports">60 reports / 15 months</div>
+          <ul class="plan-features">
+            <li>60 monthly reports</li><li>Valid 15 months</li><li>All features</li><li>Priority support</li>
+          </ul>
+          <button class="plan-btn">Get Annual</button>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px;padding:24px;background:var(--green-50);border-radius:16px" class="reveal">
+        <p style="font-size:15px;color:var(--gray-600)">
+          💳 Pay via <strong>UPI: jyoteeprokashhaldar3097@sbi</strong> or Bank Transfer, then send screenshot on
+          <a href="https://wa.me/917407518404" style="color:var(--green-700);font-weight:700">WhatsApp: 7407518404</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       DOWNLOAD SECTION
+  ============================== -->
+  <section class="section download-bg" id="download">
+    <div class="container">
+      <div class="download-inner reveal">
+        <h2>Download Free Today</h2>
+        <p>Available for Android. Free to download, free to start. No credit card needed.</p>
+        <div class="download-btns">
+          <a href="downloads/icds-report-app.apk" download class="dl-btn dl-apk">
+            <span class="dl-btn-icon">📱</span>
+            <span><span class="dl-btn-text-sub">Direct Download</span><span class="dl-btn-text-main">Download APK</span></span>
+          </a>
+          <a href="#" class="dl-btn">
+            <span class="dl-btn-icon">🟢</span>
+            <span><span class="dl-btn-text-sub">Coming Soon on</span><span class="dl-btn-text-main">Google Play Store</span></span>
+          </a>
+        </div>
+        <div class="download-note">
+          Free for Android 6.0+  ·  No ads  ·  No personal data sold  ·  Questions? <a href="https://wa.me/917407518404">WhatsApp us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       FAQ SECTION
+  ============================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="faq-header reveal"><div class="tag">❓ FAQ</div><h2>Frequently Asked Questions</h2></div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">Is this app free to use?<span class="faq-icon">+</span></button>
+          <div class="faq-a">Yes! The app is 100% free to download. You get 6 free monthly reports with no time pressure. After that, you can purchase additional reports for as low as ₹30.</div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">Do I need internet to use the app?<span class="faq-icon">+</span></button>
+          <div class="faq-a">You need internet to save data and generate reports, as all data is stored safely in the cloud. This means your data is safe even if you change your phone.</div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">Will opening stock carry over automatically to next month?<span class="faq-icon">+</span></button>
+          <div class="faq-a">Yes! When you generate a monthly report, the closing stock is automatically saved. Next month, when you open Daily Entry, that closing stock is pre-filled as the opening stock.</div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">What if I make a mistake in attendance?<span class="faq-icon">+</span></button>
+          <div class="faq-a">No problem! You can go back to any previous date in the same month and edit the attendance. Just tap Save again. The report will recalculate.</div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">How do I upgrade my plan?<span class="faq-icon">+</span></button>
+          <div class="faq-a">Open Settings → Plan tab in the app. Send the payment via UPI or bank transfer, then share the payment screenshot on WhatsApp. Your plan will be upgraded within a few hours.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       CONTACT SECTION
+  ============================== -->
+  <section class="section contact-bg" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-info reveal">
+          <div class="tag">📬 Contact</div>
+          <h2>Get in Touch</h2>
+          <p>Have a question, need help, or want to report a bug? We're here to help — usually respond within a few hours.</p>
+          <div class="contact-item"><div class="contact-icon">💬</div><div><div class="contact-item-label">WhatsApp (Fastest)</div><div class="contact-item-val"><a href="https://wa.me/917407518404" style="color:var(--green-700)">7407518404</a></div></div></div>
+          <div class="contact-item"><div class="contact-icon">📧</div><div><div class="contact-item-label">Email</div><div class="contact-item-val">jp10haldar@gmail.com</div></div></div>
+          <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-item-label">Developer</div><div class="contact-item-val">Jyotee Prokash Haldar</div></div></div>
+        </div>
+        <div class="contact-form reveal reveal-delay-2">
+          <div class="tag">✉ Send Message</div>
+          <div class="form-group"><label class="form-label">Your Name</label><input class="form-input" type="text" placeholder="Enter your name" /></div>
+          <div class="form-group"><label class="form-label">WhatsApp / Email</label><input class="form-input" type="text" placeholder="Your contact" /></div>
+          <div class="form-group"><label class="form-label">Message</label><textarea class="form-input" placeholder="Your question or feedback..."></textarea></div>
+          <button class="form-submit" onclick="handleFormSubmit()">Send via WhatsApp →</button>
+          <p style="font-size:12px;color:var(--gray-600);margin-top:12px;text-align:center">This will open WhatsApp with your message pre-filled</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       FOOTER
+  ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo"><img src="images/logo.png" alt="ICDS Logo" style="width: 36px; height: 36px; border-radius: 10px;">ICDS Monthly Report</div>
+          <p class="footer-desc">Built by an Anganwadi worker's community, for Anganwadi workers. Making your monthly reporting simple, accurate, and stress-free.</p>
+        </div>
+        <div class="footer-col"><h4>App</h4><a href="#features">Features</a><a href="#screenshots">Screenshots</a><a href="#how">How it Works</a><a href="#download">Download</a></div>
+        <div class="footer-col"><h4>Pricing</h4><a href="#plans">Free Trial</a><a href="#plans">Basic ₹30</a><a href="#plans">Pro ₹100</a><a href="#plans">Annual ₹1000</a></div>
+        <div class="footer-col"><h4>Support</h4><a href="https://wa.me/917407518404">WhatsApp</a><a href="mailto:jp10haldar@gmail.com">Email</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 ICDS Monthly Report · Jyotee Prokash Haldar</span><span>Made with 💚 for Anganwadi Workers</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LINKING OUR NEW EXTERNAL JS FILE -->
+  <script src="js/script.js"></script>
+</body>
+</html>
